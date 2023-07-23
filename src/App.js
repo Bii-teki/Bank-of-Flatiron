@@ -55,6 +55,16 @@ function App() {
     setTransaction(updateTransaction)
 
   }
+
+// function onUpdateTrans(id, description, date, category, ){
+//     const updateTransaction = transaction.map(transa=>
+//       {if(transa.id==id){
+//         return, des
+//       }}    
+//     )
+//     setTransaction(updateTransaction)
+
+//   }
   return (
     <div >
      <Header />

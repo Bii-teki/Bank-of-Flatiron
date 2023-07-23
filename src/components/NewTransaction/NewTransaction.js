@@ -38,7 +38,7 @@ function NewTransaction(onTransNew) {
     .then(data=>console.log(data))
    
 } else {
-    setErrors(["First name is required!"]);
+    setErrors(["First category is required!"]);
   }
 }
   return(
