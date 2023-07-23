@@ -29,11 +29,7 @@ function App() {
 }
  fetcha();
 }, [query])
-  // function handleAddNew(newTrans) {
-  //   const updateTransaction = [...transaction, newTrans]
-  //   setTransaction(updateTransaction)
-      
-  //  }
+ 
    function handleSearch(e) {
     setQuery(e.target.value)
   }
@@ -54,26 +50,11 @@ function App() {
 
   function onDeleteTrans(id){
     const updateTransaction = transaction.filter(transa=>
-      transa.id !==id
-      
+      transa.id !==id      
     )
     setTransaction(updateTransaction)
 
   }
-  // function onUpdateTrans(id){
-  //   const updateTransaction= transaction.map(transa =>{
-  //         if(transa.id===id){
-  //           return {...transa, completed}
-  //         }
-  //         else{
-  //           return transa
-  //         }
-  //       })    
-  //       setTransaction(updateTransaction)
-
-  // }   
-
- 
   return (
     <div >
      <Header />
