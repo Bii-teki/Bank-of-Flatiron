@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
 
     const fetcha = () =>{
-    fetch("http://localhost:3000/transactions?q=" + query)
+    fetch("https://phase-2-frs3.onrender.com/transactions?q=" + query)
       .then((resp) => resp.json())
       .then(transaction => setTransaction(transaction)
                

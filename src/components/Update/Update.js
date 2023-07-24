@@ -18,7 +18,7 @@ function Update({id, date, description, category, amount}){
       
        useEffect(()=> {
         const fetchd = () =>{
-            fetch("http://localhost:3000/transactions?q=" + id)
+            fetch("https://phase-2-frs3.onrender.com/transactions?q=" + id)
             .then(r=>r.json())
             .then(data=>{
               setValues((prevValues) => ({
@@ -37,7 +37,7 @@ function Update({id, date, description, category, amount}){
 
        function handleOnSbmit(e) {
         e.preventDefault()
-        fetch("http://localhost:3000/transactions?q=" + id,{
+        fetch("https://phase-2-frs3.onrender.com/transactions?q=" + id,{
 
         method: "PATCH",
         headers:{

@@ -27,7 +27,7 @@ function NewTransaction(onTransNew) {
 
         setErrors([]);
   
-      fetch("http://localhost:3000/transactions",{
+      fetch("https://phase-2-frs3.onrender.com/transactions",{
         method: "POST",
         headers:{
             "Content-Type": "application/json"
@@ -36,7 +36,8 @@ function NewTransaction(onTransNew) {
     }) 
     .then(r=>r.json())
     .then(data=>console.log(data))
-   
+    
+
 } else {
     setErrors(["First category is required!"]);
   }

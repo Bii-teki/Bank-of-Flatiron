@@ -6,7 +6,7 @@ function Transaction({id, date, description, category, amount, onDeleteTrans}) {
   const [edit, setEdit] = useState(false)
   
   function handleDelete() {
-    fetch(`http://localhost:3000/transactions/${id}`,
+    fetch(`https://phase-2-frs3.onrender.com/transactions/${id}`,
     {
       method:"DELETE"
     })
